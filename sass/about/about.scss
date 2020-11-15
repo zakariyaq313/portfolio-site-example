@@ -1,0 +1,29 @@
+.section-about-me{
+    padding: 10rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primary-dark);
+    color: var(--color-white);
+}
+
+.section-about-me img{
+    width: 40rem;
+    margin: 0 5rem;
+}
+
+.sub-heading{
+    color: var(--color-green);
+    font-size: 6rem;
+}
+
+.intro{
+    margin: 0 5rem;
+}
+
+.intro p{
+    font-weight: 400;
+    font-size: 2.2rem;
+    width: 50rem;
+    margin-top: 2rem;
+}

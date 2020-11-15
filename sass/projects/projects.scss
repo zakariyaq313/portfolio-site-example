@@ -1,0 +1,76 @@
+.section-projects{
+    margin: 0 15rem;
+}
+
+.section-projects h2{
+    padding: 2rem;
+    margin: 6rem 0 0;
+}
+
+.projects-container{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.project-card{
+    height: 55rem;
+    width: 30rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0, .6);
+    margin: 5rem 0;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    background-image: linear-gradient(to right, var(--color-green-light), var(--color-green-dark));
+}
+
+.project-screenshot{
+    width: 100%;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.project-title{
+    position: absolute;
+    top: 10%;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.project-link:link,
+.project-link:visited{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    font-size: 4rem;
+    margin: 0 2rem;
+    transition: all .2s;
+}
+
+.project-link:hover{
+    color: rgba(255, 255, 255, .5);
+}
+
+.project-description{
+    position: absolute;
+    top: 40%;
+    margin-top: 4rem;
+    padding: 2rem;
+    font-weight: 500;
+    line-height: 1.5;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.project-card:hover .project-screenshot{
+    opacity: 0;
+}
+
+.project-card:hover .project-title{
+    opacity: 1;
+}
+
+.project-card:hover .project-description{
+    opacity: 1;
+}

@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    --color-primary-light: #2a2c37;
+    --color-primary-dark: #1d1e26;
+    --color-green-light: #7ed56f;
+    --color-green-dark: #28b485;
+    --color-green: #50fa7b;
+    --color-white: #eaeef1;
+    --color-blue: #9580ff;
+}
+
+body{
+    font-family: 'Fira Code', monospace;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    background-color: var(--color-primary-light);
+    color: var(--color-white);
+}
