@@ -13,6 +13,26 @@ html{
     --color-green: #50fa7b;
     --color-white: #eaeef1;
     --color-blue: #9580ff;
+
+    @include respond (large-pc){
+		font-size: 75%;
+	}
+
+    @include respond (tab-land){
+		font-size: 56.25%;
+	}
+
+	@include respond (tab-port){
+		font-size: 50%;
+	}
+
+    @include respond (phone){
+        font-size: 40%;
+    }
+
+	@include respond (mobile){
+		font-size:  35%;
+	}
 }
 
 body{

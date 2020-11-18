@@ -1,5 +1,6 @@
 .section-projects{
     margin: 0 15rem;
+    text-align: center;
 }
 
 .section-projects h2{
@@ -11,6 +12,13 @@
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(3, 1fr);
+    @include respond(tab-port){
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include respond(phone){
+        grid-template-columns: 1fr;
+    }
 }
 
 .project-card{

@@ -5,11 +5,18 @@
     align-items: center;
     background-color: var(--color-primary-dark);
     color: var(--color-white);
+    @include respond(phone){
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 .section-about-me img{
     width: 40rem;
     margin: 0 5rem;
+    @include respond(phone){
+        margin: 6rem 0 0;
+    }
 }
 
 .sub-heading{

@@ -14,6 +14,31 @@ html {
   --color-white: #eaeef1;
   --color-blue: #9580ff;
 }
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 37.5em) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 21.875em) {
+  html {
+    font-size: 35%;
+  }
+}
 
 body {
   font-family: "Fira Code", monospace;
@@ -104,10 +129,21 @@ header {
   background-color: var(--color-primary-dark);
   color: var(--color-white);
 }
+@media (max-width: 37.5em) {
+  .section-about-me {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 
 .section-about-me img {
   width: 40rem;
   margin: 0 5rem;
+}
+@media (max-width: 37.5em) {
+  .section-about-me img {
+    margin: 6rem 0 0;
+  }
 }
 
 .sub-heading {
@@ -128,6 +164,7 @@ header {
 
 .section-projects {
   margin: 0 15rem;
+  text-align: center;
 }
 
 .section-projects h2 {
@@ -139,6 +176,16 @@ header {
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 56.25em) {
+  .projects-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 37.5em) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 .project-card {
@@ -208,11 +255,11 @@ header {
   margin: 10rem 0 0;
   background-color: var(--color-primary-dark);
   position: relative;
+  text-align: center;
 }
 
 .section-blogs h2 {
   padding: 2rem;
-  margin-left: 10rem;
 }
 
 .arrow-right {
