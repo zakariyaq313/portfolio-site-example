@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 html{
@@ -27,7 +28,7 @@ html{
 	}
 
     @include respond (phone){
-        font-size: 40%;
+        font-size: 45%;
     }
 
 	@include respond (mobile){
@@ -37,7 +38,6 @@ html{
 
 body{
     font-family: 'Fira Code', monospace;
-    box-sizing: border-box;
     font-size: 1.6rem;
     background-color: var(--color-primary-light);
     color: var(--color-white);

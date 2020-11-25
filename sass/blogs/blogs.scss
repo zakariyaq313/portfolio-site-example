@@ -17,6 +17,9 @@
     font-size: 8rem;
     transform: translate(0, -50%);
     animation: moveRight 2s infinite;
+    @include respond(phone){
+        display: none !important;
+    }
 }
 
 @keyframes moveRight {
@@ -37,6 +40,13 @@
     overflow-x: scroll;
     scrollbar-width: none;
     scroll-snap-type: x mandatory;
+    @include respond(tab-port){
+        margin: 2rem 0 0 12rem;
+    }
+
+    @include respond(phone){
+        margin: 2rem 0 0 2rem;
+    }
 }
 
 .blogs-container::-webkit-scrollbar{

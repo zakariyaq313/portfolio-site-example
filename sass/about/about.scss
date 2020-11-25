@@ -2,26 +2,26 @@
     padding: 10rem 0;
     display: flex;
     justify-content: center;
+    flex-direction: row;
     align-items: center;
     background-color: var(--color-primary-dark);
     color: var(--color-white);
-    @include respond(phone){
-        flex-direction: column;
-        text-align: center;
-    }
 }
 
 .section-about-me img{
     width: 40rem;
     margin: 0 5rem;
-    @include respond(phone){
-        margin: 6rem 0 0;
-    }
 }
 
-.sub-heading{
-    color: var(--color-green);
-    font-size: 6rem;
+@media(max-width: 800px){
+    .section-about-me{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-about-me img{
+        margin: 6rem 0 0;
+    }
 }
 
 .intro{

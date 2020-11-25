@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Swaraj | Portfolio site</title>
+    <title>Portfolio site</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -15,6 +15,12 @@
     <main>
         <header>
             <nav class="navbar">
+                <span class="nav-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+
                 <ul>
                     <li class="nav-element"><a href="#about-me">About me</a></li>
                     <li class="nav-element"><a href="#projects">Projects</a></li>
@@ -27,7 +33,7 @@
                 <h1>Oi, what's up?</h1>
                 <h3>Lorem ipsum dolor sit amet consectetur</h3>
             </div>
-            
+
         </header>
 
         <section class="section-about-me" id="about-me">
@@ -78,7 +84,7 @@
                     <h3><a href="#" class="article-link">What is an API?</a></h3>
                     <a href="#"><img src="images/What-is-an-API.png" alt=""></a>
                     <p class="author">Author</p>
-                    <p class="author-name">Swaraj P.</p>
+                    <p class="author-name">XYZ</p>
                 </div>
                 <div class="blog-card"></div>
                 <div class="blog-card"></div>
@@ -98,9 +104,17 @@
             <a href="#"><i class="fab fa-discord"></i></a>
         </div>
 
-        <p>&copy; Swaraj Pavitrakar</p>
-        <p>Made by Zakariya</p>
+        <p>Made by <a href="https://zakariyaq313.github.io/my_website/" rel="nofollow noreferrer" target="_blank">Zakariya</a></p>
     </footer>
+
+    <script type="text/javascript">
+        let button = document.querySelector("span.nav-button"),
+            navbar = document.querySelector(".navbar ul");
+
+            button.addEventListener("click", () => {
+                navbar.style.marginRight = "10rem";
+            });
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,7 @@
+.sub-heading{
+    color: var(--color-green);
+    font-size: 6rem;
+    @include respond(phone){
+        font-size: 5.5rem;
+    }
+}

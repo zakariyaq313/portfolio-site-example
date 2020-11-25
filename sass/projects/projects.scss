@@ -1,6 +1,9 @@
 .section-projects{
     margin: 0 15rem;
     text-align: center;
+    @include respond(tab-port){
+        margin: 0 5rem;
+    }
 }
 
 .section-projects h2{
